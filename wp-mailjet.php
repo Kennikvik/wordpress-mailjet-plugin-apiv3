@@ -146,7 +146,7 @@ function my_show_extra_profile_fields($user)
 						<fieldset><legend class="screen-reader-text"><span><?php _e('Subscribe')?></span></legend>
 						<label for="admin_bar_front">
 							<input type="checkbox" name="mailjet_subscribe_ok" id="mailjet_subscribe_ok" value="1" <?php echo  (esc_attr( get_the_author_meta( 'mailjet_subscribe_ok', $user->ID ) ) ? 'checked="checked" ' : ''); ?>class="checkbox" />
-							<?php _e('Subscribe to our newsletter')?>
+							<?php _e('Subscribe to our newsletter', 'wp-mailjet' )?>
 						</label>
 						</fieldset>
 					</td>
@@ -178,7 +178,7 @@ function show_mailjet_subscribe_field()
 	<p>
 		<label>
 			<input type="checkbox" name="mailjet_subscribe_ok" id="mailjet_subscribe_ok" value="1" <?php echo  (esc_attr( get_the_author_meta( 'mailjet_subscribe_ok', $user->ID ) ) ? 'checked="checked" ' : ''); ?>class="checkbox" />
-			<?php _e('Subscribe to our newsletter')?>
+			<?php _e('Subscribe to our newsletter', 'wp-mailjet' )?>
 		</label>
 	</p>
 <?php
